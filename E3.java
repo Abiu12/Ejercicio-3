@@ -3,21 +3,21 @@
 *@author Franco Matias Abiu Mahanaim
 *@version 19/04/2020
  */
+ /**
+ * Esta clase realiza una diferencia de numeros introducidos en la misma linea
+*@author Franco Matias Abiu Mahanaim
+*@version 19/04/2020
+ */
  import java.util.Scanner; // se importa el Scanner para poder leer el numero desde el teclado
 public class E3{
     
-       Scanner sc=new Scanner(System.in);// Se declara la variable del Scanner
-          
        
-        
-        String a=sc.nextLine();//Se lee desde el teclado y se guarda en la varible
-        
-        
-        char b;//char auxiliar
+      
+      public  int Resta(String a){
+               char b;//char auxiliar
         char c;//char auxiliar
         String j="";//String auxiliar
         String i="";//String auxiliar
-         public  int Resta(){
         for(int x=0;x<a.length();x++){
       if(a.charAt(x)!=' '){//condicion para recorrer y guardar en la variable b, para despues agregarlo a la cadena j el caracter que tenga en la posicion x hasta encontrarse con el espacio
          b=a.charAt(x);
@@ -40,6 +40,19 @@ int resta=0;// se crea la variable de resta
 resta=s1-s2;// se realiza la operacion
 resta=Math.abs(resta);
 return resta;} 
+
+public static void main(String[]args){
+    E3 r= new E3();
+      System.out.println("Ingrese la resta a realizar ");  
+Scanner sc=new Scanner(System.in);// Se declara la variable del Scanner
+String a=sc.nextLine();//Se lee desde el teclado y se guarda en la varible
+      System.out.println("La resta de los numeros es "+r.Resta(a));  
+       
 }
+}
+
+
+
+
 
 
